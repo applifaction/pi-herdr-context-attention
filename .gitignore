@@ -1,0 +1,10 @@
+node_modules/
+coverage/
+.local-validation/
+.env
+.env.*
+!.env.example
+*.log
+*.jsonl
+*.tgz
+.DS_Store
