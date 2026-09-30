@@ -1,16 +1,17 @@
 {
   "name": "pi-herdr-context-attention",
-  "version": "0.1.0",
-  "description": "Show Herdr's native Needs attention indicator when a Pi agent hits its context limit and needs compaction.",
+  "version": "0.3.0",
+  "description": "Show a dedicated Context full warning in Herdr when a Pi agent needs compaction, without changing native agent states.",
   "type": "module",
   "keywords": ["pi-package", "pi-extension", "herdr", "context-window", "compaction"],
   "engines": {
     "node": ">=22.19.0"
   },
   "scripts": {
-    "test": "node --test tests/integration.test.mjs"
+    "test": "node --test tests/*.test.mjs",
+    "test:tui": "uv run --with pyte python tests/tui_smoke.py"
   },
-  "files": ["index.ts", "README.md", "tests/"],
+  "files": ["index.ts", "metadata.ts", "compaction-observer.ts", "README.md", "tests/"],
   "peerDependencies": {
     "@earendil-works/pi-ai": "*",
     "@earendil-works/pi-coding-agent": "*"

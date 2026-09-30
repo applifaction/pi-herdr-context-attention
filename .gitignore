@@ -1,6 +1,8 @@
 node_modules/
 coverage/
 .local-validation/
+.pi-subagents/
+__pycache__/
 .env
 .env.*
 !.env.example
